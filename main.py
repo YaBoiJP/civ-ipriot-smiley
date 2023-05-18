@@ -4,7 +4,7 @@ That is, delete the sense_hat.py file that is included in this bundle."""
 import time
 
 from happy import Happy
-
+from sad import Sad
 if __name__ == '__main__':
     # This is only needed if you have not deleted sense_hat.py
     # and only in some environments - uncomment only if you have errors
@@ -29,4 +29,6 @@ if __name__ == '__main__':
     # The method blink is implemented by the Happy class, but
     # is defined as an interface (i.e., an abstract base class
     # with an abstract method).
-    smiley.blink()
+    sad = Sad()
+    sad.show()
+    sad.blink()
